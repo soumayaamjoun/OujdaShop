@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <!-- Image de Profil -->
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_gravity="center"
+            android:contentDescription="Photo de profil"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Bouton pour changer la photo -->
+        <Button
+            android:id="@+id/btnChangePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Changer la photo"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Champ Nom -->
+        <EditText
+            android:id="@+id/etNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom"
+            android:inputType="textPersonName"
+            android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+            android:padding="10dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Champ Prénom -->
+        <EditText
+            android:id="@+id/etPrenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prénom"
+            android:inputType="textPersonName"
+            android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+            android:padding="10dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Champ Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:padding="10dp"
+            android:background="@android:color/white"
+            android:enabled="true"
+            android:focusable="false"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Bouton Modifier -->
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modifier"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp" />
+
+        <!-- Bouton Modifier le mot de passe -->
+        <Button
+            android:id="@+id/btnChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modifier le mot de passe"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp" />
+
+        <!-- Switch pour notifications -->
+        <Switch
+            android:id="@+id/switchNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recevoir des notifications"
+            android:layout_marginTop="10dp" />
+
+        <!-- Choix du thème -->
+        <RadioGroup
+            android:id="@+id/radioGroupTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/rbLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clair" />
+
+            <RadioButton
+                android:id="@+id/rbDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sombre" />
+        </RadioGroup>
+
+    </LinearLayout>
+</ScrollView>
